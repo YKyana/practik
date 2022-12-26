@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    <script>  
+    var ball;    
+      function init() {
+        var data = {
+			images: ["ball.png"],
+			frames: {width:30, height:30},
+            animations: {
+                    jump:[6,8,"run"]
+			}
+		};
+        
+        var spriteSheet = new createjs.SpriteSheet(data);
+        var animation = new createjs.Sprite(spriteSheet, "run");
+
+    };
+
+    
+    </script>
+  </head>
+  <body onload="init();">
+    <canvas id="demoCanvas" width="500" height="200"></canvas>
+  </body>
+</html>
